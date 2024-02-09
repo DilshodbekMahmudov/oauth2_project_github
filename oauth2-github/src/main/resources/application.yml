@@ -1,0 +1,20 @@
+server:
+  port: 8083
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          github:
+            client-id: beda1b86fff51e129f34
+            client-secret: 5ca13b3696826ce5aa0b18a3dc2bfe2f5d8320b8
+  datasource:
+    url: jdbc:postgresql://localhost:5432/oauth_github
+    username: oauth_github
+    password: dilshod
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQL92Dialect
+    hibernate:
+      ddl-auto: update
